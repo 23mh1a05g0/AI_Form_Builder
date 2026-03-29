@@ -1,0 +1,233 @@
+/* ===== Chat Container ===== */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Title */
+.chat-title {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+/* Chat Box */
+.chat-box {
+  flex: 1;
+  background: #020617;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 15px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+/* Placeholder */
+.placeholder {
+  color: #64748b;
+  text-align: center;
+}
+
+/* Message Bubble */
+.message-bubble {
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+/* User Message */
+.message-bubble.user {
+  background: #1e293b;
+  align-self: flex-end;
+  text-align: right;
+  border-left: 4px solid #22c55e;
+}
+
+/* AI Message */
+.message-bubble.ai {
+  background: #111827;
+  border-left: 4px solid #facc15;
+}
+
+/* Label */
+.label {
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+/* Input Area */
+.input-area {
+  display: flex;
+  gap: 10px;
+}
+
+/* Input */
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #1e293b;
+  color: white;
+}
+
+/* Button */
+.input-area button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background: #38bdf8;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-area button:hover {
+  background: #0ea5e9;
+}
+
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+/* ===== MAIN CONTAINER ===== */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* ===== PANELS ===== */
+.panel {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* LEFT SIDE (CHAT) */
+.chat-panel {
+  width: 40%;
+  border-right: 1px solid #334155;
+  background: #020617;
+}
+
+/* RIGHT SIDE (FORM) */
+.form-panel {
+  width: 60%;
+  background: #020617;
+}
+
+/* ===== FORM HEADER ===== */
+.form-header {
+  border-bottom: 1px solid #334155;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.form-header h2 {
+  color: #38bdf8;
+  margin: 0;
+}
+
+/* ===== FORM CONTENT ===== */
+.form-content {
+  background: #020617;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* ===== SCROLLBAR (OPTIONAL NICE UI) ===== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+}
+
+/* ===== DIFF PANEL ===== */
+.diff-panel {
+  margin-top: 10px;
+  padding: 10px;
+  background: #111827;
+  border-radius: 8px;
+  border: 1px solid #334155;
+}
+
+/* ===== EXPORT PANEL ===== */
+.export-panel {
+  margin-top: 10px;
+  padding: 10px;
+  background: #1e293b;
+  border-radius: 8px;
+  border: 1px solid #334155;
+}
+
+/* ===== BUTTON GLOBAL ===== */
+button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #38bdf8;
+  color: black;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0ea5e9;
+}
+
+/* ===== EXPORT PANEL ===== */
+.export-panel {
+  margin-top: 15px;
+  padding: 15px;
+  background: #1e293b;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Title */
+.export-panel h3 {
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+/* Buttons container */
+.export-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.export-buttons button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #38bdf8;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+/* Hover */
+.export-buttons button:hover {
+  background: #0ea5e9;
+  transform: scale(1.05);
+}
+
+/* Active click effect */
+.export-buttons button:active {
+  transform: scale(0.95);
+}
+
